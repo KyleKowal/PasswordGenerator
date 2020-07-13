@@ -34,3 +34,23 @@ let numbers = "0123456789";
 let symbols = "!*$%&#@+?:;()^";
 let pwString = "";
 
+if (userLowerCase) {
+    pwString = pwString + lowerCase;
+  }
+
+  if (userUpperCase) {
+    pwString = pwString + upperCase;
+  } 
+
+  if (userNumbers) {
+    pwString = pwString + numbers;
+  }
+
+  if (userSymbols) {
+    pwString = pwString + symbols;
+  }
+
+  if (pwString === "") {
+    alert("Not enough characters. Please click Generate Password to try again.");
+    return;
+  }
