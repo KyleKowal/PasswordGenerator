@@ -13,7 +13,7 @@ function writePassword() {
 function generatePassword() {
 
   // User chooses Password length
-  let userLength = prompt("Choose a length between 8 and 128 characters.");
+  let userLength = prompt("Choose a length between 8 and 128 characters long.");
   
 
   // Error if user chooses incorrect length
