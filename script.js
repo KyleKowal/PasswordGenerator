@@ -54,3 +54,12 @@ if (userLowerCase) {
     alert("Not enough characters. Please click Generate Password to try again.");
     return;
   }
+
+  let userPassword = "";
+  for (let i = 0; i < userLength; i++) {
+    userPassword += pwString.charAt(Math.floor(Math.random() * pwString.length));
+  }
+
+  return userPassword;
+}
+
