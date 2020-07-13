@@ -10,9 +10,14 @@ function writePassword() {
 
 }
 
-//Function to generate password based in user inputs
 function generatePassword() {
 
-  // prompt user for password length
-  let userLength = prompt("Choose a length between 8 and 128 characters long.");
+  // User chooses Password length
+  let userLength = prompt("Choose a length between 8 and 128 characters.");
   
+
+  // Error if user chooses incorrect length
+ if (userLength < 8 || userLength > 128 || isNaN(userLength)) {
+    alert("Not a valid password length. Please click Generate Password to try again.");
+    return;
+  };
