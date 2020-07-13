@@ -21,3 +21,10 @@ function generatePassword() {
     alert("Not a valid password length. Please click Generate Password to try again.");
     return;
   };
+
+  let userLowerCase = confirm("Chooose Lower Case letters in your password? Ok for Yes and Cancel for No.");
+  let userUpperCase = confirm("Choose Upper Case letters in your password? Ok for Yes and Cancel for No.");
+  let userNumbers = confirm("Chooose Numbers in your password? Ok for Yes and Cancel for No.");
+  let userSymbols = confirm("Choose Symblos in your password? Ok for Yes and Cancel for No.");
+}
+  
